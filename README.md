@@ -1,14 +1,17 @@
 # Divisor_Arquivos (.RET/.TXT)
 
-Este projeto foi criado no padrão de arquitetura de software MVC (Model-View-Controller). Surgiu da necessidade de dividir os arquivos de retorno bancário (extensão.RET) recebidos do Banco do Brasil pelo setor financeiro da empresa em que trabalhava. Em cada parte dividida faz-se necessário incluir sempre o cabeçalho e rodapé. Além dos arquivos com a extensão .RET, é possível também dividir arquivos com a extensão .TXT.
+Este projeto foi criado no padrão de arquitetura de software MVC (Model-View-Controller). Surgiu da necessidade de dividir os arquivos de retorno bancário (extensão.RET) recebidos do Banco do Brasil pelo setor financeiro da empresa em que trabalhava. Em cada parte dividida, faz-se necessário incluir sempre o cabeçalho e rodapé. Além dos arquivos com a extensão .RET, é possível também dividir arquivos com a extensão .TXT.
 
-Possui uma interface gráficas, onde é possível:
+Foi gerado o aplicativo "Divisor_Arquivos.exe" podendo ser executado sem a necessidade de instalar o Python ou as dependências do script.
+
+Possui uma interface gráfica, onde é possível:
 
 1. Escolher o números de partes da divisão do arquivo;
 2. Selecionar o arquivo a ser dividido (arquivo original);
 3. Selecionar o diretório de saída das partes divididas;
 4. Escolher a quantidade de linhas de cabeçalho;
-5. Escolher a quantidade de linhas de rodapé.
+5. Escolher a quantidade de linhas de rodapé;
+6. Dividir o arquivo selecionado.
 
 ## Ferramentas e Bibliotecas Utilizadas
 * Python
@@ -19,6 +22,11 @@ Possui uma interface gráficas, onde é possível:
 * Pathlib
 * Messagebox
 * Filedialog
+* Base64
+* PIL
+* IO
+* Auto Py to Exe
+* PyInstaller
 
 ## Como Utilizar
 O uso é simples e amigável.
