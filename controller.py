@@ -1,16 +1,13 @@
 # controller.py
-import os
-import time
-from tkinter import filedialog, PhotoImage, messagebox
+
+from tkinter import filedialog
 from view import *
 from model import dividir_arquivo_por_linhas
 
 class Controller:
     def __init__(self, root, view):
         self.view = view
-        self.root = root
-        # self.configurar_eventos()
-
+        self.root = root      
 
     def dividir_arquivo(self):
         arquivo_ret = self.view.get_arquivo_original()
@@ -21,12 +18,10 @@ class Controller:
 
         
         # Chame a função do modelo para dividir o arquivo
-        dividir_arquivo_por_linhas(arquivo_ret, num_partes, pasta_saida, num_linhas_cabecalho, num_linhas_rodape)      
-
+        dividir_arquivo_por_linhas(arquivo_ret, num_partes, pasta_saida, num_linhas_cabecalho, num_linhas_rodape)    
 
         # Atualize o status na visão
         self.view.mostrar_status("")
-
 
     def selecionar_arquivo_original(self):
         arquivo_ret = filedialog.askopenfilename(filetypes=[("Arquivos RET", "*.ret"), ('Arquivos TXT', '*.txt')])
