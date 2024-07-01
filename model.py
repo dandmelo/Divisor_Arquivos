@@ -6,7 +6,6 @@ import pathlib
 from tkinter import messagebox
 import view
 
-
 def dividir_arquivo_por_linhas(arquivo_ret, num_partes, pasta_saida, num_linhas_cabecalho, num_linhas_rodape):
 
     # Verifique se o diretório do arquivo original está vazio e, se estiver, emita um alerta
@@ -104,7 +103,7 @@ def dividir_arquivo_por_linhas(arquivo_ret, num_partes, pasta_saida, num_linhas_
        
 
     mensagem_sucesso = f"O Arquivo foi Dividido em {num_partes} Partes com Sucesso^^"
-    messagebox.showinfo("Sucesso!", mensagem_sucesso) # chama o método do controller para finalizar a barra e mostrar o status na view
+    messagebox.showinfo("Sucesso!", mensagem_sucesso)
 
 
 
